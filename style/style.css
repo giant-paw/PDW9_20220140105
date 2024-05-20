@@ -1,0 +1,87 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../assets/fix-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 110px;
+}
+.hero-text {
+    margin-left: 40px;
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+.card h2 {
+    font-size: 20px;
+}
+.card-content {
+    padding: 20px;
+}
+.card-content h2 {
+    margin-top: 0;
+}
+.card-content p {
+    color: #666;
+}
+
+.form-group label{
+    margin-top: 19px;
+}
+
+/* about */
+
+.kontenAbout {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sub-konten {
+    flex: 1;
+    margin: 0 80px;
+}
+
+.kontenAbout h1 {
+    margin: 30px 60px;
+    margin-bottom: 40px;
+}
+
+.sub-konten h2 {
+    margin-bottom: 7px;
+}
+
+.sub-konten p {
+    margin: 21px 0;
+    margin-left: 40px;
+    text-align: left;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Sekolah</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- mengimpor alert dari sweetalert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css">
+
+    <script src="script/main.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="" width="120" style="margin: 0 89vh;">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Beri anak Anda pendidikan internasional kelas dunia dengan harga terjangkau</h1>
+                <p>Giant Children Garden menyediakan program yang dapat memberikan pendidikan bermutu kepada anak anda, tumbuh kembangnya sangat penting untuk masa depan. </p>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="text-center mb-4">Temukan bagaimana anak Anda dapat berkembang di lingkungan sekolah multikultural.</h2>
+                    
+                    <form id="formulirku">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap :</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email :</label>
+                            <input type="email" class="form-control" id="email" placeholder="contoh email@gmail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="umur" class="form-label">Umur :</label>
+                            <input type="number" class="form-control" id="umur" placeholder="Umur" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="program" class="form-label">Pilih Program :</label>
+                            <select class="form-select" id="program" required>
+                                <option selected disabled value="">Program</option>
+                                <option value="Full Program">Full Program</option>
+                                <option value="International Garden">International Garden</option>
+                                <option value="Short Program">Short Program</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agree" required>
+                            <label class="form-check-label" for="agree">Saya Setuju dengan syarat dan ketentuan</label>
+                        </div>
+                        
+                        <div class="btn">
+                            <button type="button" onclick="handleSubmission()" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="kontenAbout">
+            <h1>Di Giant Children Garden, kami bimbing anak anda mencapai kemandirian belajar</h1>
+            <div class="sub-section">
+                <div class="sub-konten">
+                    <img src="assets/icon1.webp" alt="Gambar 1" class="small-img">
+                    <h2>Siswa Dari 70+ Negara</h2>
+                    <p>Kami merayakan keragaman dan mempromosikan pemikiran internasional, sehingga anak-anak dapat tumbuh menjadi warga dunia yang peduli. Untuk memastikan semua kebangsaan diwakili secara adil.</p>
+                </div>
+                <div class="sub-konten">
+                    <img src="assets/icon2.webp" alt="Gambar 2" class="small-img">
+                    <h2>Biaya sekolah yang wajar dan terjangkau</h2>
+                    <p>Sebagai anggota Yayasan Sekolah Global, kami dapat memangkas biaya overhead dan mempertahankan struktur biaya yang moderat. Ini berarti Anda dapat memberikan pendidikan yang luar biasa bagi anak Anda dengan harga yang terjangkau</p>
+                </div>
+                <div class="sub-konten">
+                    <img src="assets/icon3.webp" alt="Gambar 3" class="small-img">
+                    <h2>Pendidikan kelas dunia dengan kurikulum internasional.</h2>
+                    <p>Kurikulum kami dirancang untuk menangani kebutuhan akademis, emosional, sosial, dan individual setiap siswa berdasarkan tingkat kelas mereka. Kami menggunakan IB PYP untuk anak usia dini dan sekolah dasar. Untuk tingkat sekunder, kami menawarkan IGCSE dan IB DP.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- menghubungkan ke sweet alert2 -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+</html>
